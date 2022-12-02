@@ -1,0 +1,770 @@
+<html lang="en"><head>
+		<!-- Title -->
+		<title>Musicverse - GameFi x Musicverse x Videoverse | $TRACK</title>
+
+		<!-- Required Meta Tags Always Come First -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="https://music.shinarium.com/themes/default/img/icon.png?v=1.4.5">
+
+		<meta name="title" content="Musicverse - GameFi x Musicverse x Videoverse | $TRACK">
+		<meta name="description" content="Musicverse ($TRACK) is the first-of-its-kind blockchain-based decentralized GameFi, Musicverse, and video streaming platform. ffering holders in-app rewards, perks">
+		<meta name="keywords" content="music, streaming, video, youtube, spotify, itunes, facebook, video sharing, justin bieber, netflix, soundcloud, metaverse, shiba, shibarium, token, coin">
+
+
+		<link rel="canonical" href="https://music.shinarium.com"><link rel="home" href="https://music.shinarium.com"><link rel="alternate" href="https://music.shinarium.com?lang=english" hreflang="en"><link rel="alternate" href="https://music.shinarium.com?lang=arabic" hreflang="ar"><link rel="alternate" href="https://music.shinarium.com?lang=dutch" hreflang="nl"><link rel="alternate" href="https://music.shinarium.com?lang=french" hreflang="fr"><link rel="alternate" href="https://music.shinarium.com?lang=german" hreflang="de"><link rel="alternate" href="https://music.shinarium.com?lang=russian" hreflang="ru"><link rel="alternate" href="https://music.shinarium.com?lang=spanish" hreflang="es"><link rel="alternate" href="https://music.shinarium.com?lang=turkish" hreflang="tr"><meta property="og:title" content="GameFi x Musicverse x Videoverse | $TRACK"><meta property="og:image" content="https://music.shinarium.com/themes/default/img/logo.png"><meta property="og:image:width" content="500"><meta property="og:image:height" content="500"><meta property="og:description" content="Musicverse ($TRACK) is the first-of-its-kind blockchain-based decentralized GameFi, Musicverse, and video streaming platform. ffering holders in-app rewards, perks"><meta property="og:url" content="https://music.shinarium.com">
+
+		<!-- Google Fonts -->
+		<link href="https://music.shinarium.com/themes/default/fonts/Roboto.css" rel="stylesheet">
+		<link href="https://music.shinarium.com/themes/default/fonts/Muli.css" rel="stylesheet">
+
+		<script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/Km9gKuG06He-isPsP6saG8cn/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-tL/88+JE9Mv/pJzkZt5DBcS7efRA2LrT4YX0Htu8Rnmat69OIBwraynHJm/fWfbH"></script><script src="https://music.shinarium.com/themes/default/js/jquery.min.js?v=1.4.5"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css?v=1.4.5">
+		<script src="https://music.shinarium.com/themes/default/js/jquery-ui.min.js?v=1.4.5"></script>
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://music.shinarium.com/themes/default/css/bootstrap.min.css?v=1.4.5">
+		<link rel="stylesheet" href="https://music.shinarium.com/themes/default/css/owl.carousel.min.css?v=1.4.5">
+		<link rel="stylesheet" href="https://music.shinarium.com/themes/default/css/style.css?v=1.4.5">
+		<script src="https://music.shinarium.com/themes/default/js/wavesurfer.min.js?v=1.4.5"></script>
+
+		<script type="text/javascript" src="https://music.shinarium.com/themes/default/js/tag-it.min.js?v=1.4.5"></script>
+		<link rel="stylesheet" href="https://music.shinarium.com/themes/default/css/jquery.tagit.css?v=1.4.5">
+		<link rel="stylesheet" href="https://music.shinarium.com/themes/default/css/bootstrap-colorpicker.min.css?v=1.4.5">
+		<script src="https://music.shinarium.com/themes/default/js/bootstrap-colorpicker.min.js?v=1.4.5"></script>
+		<script type="text/javascript" src="https://music.shinarium.com/themes/default/js/fastclick.js?v=1.4.5"></script>
+		<!--  Scripts-->
+		<script>
+			function ajaxUrl() {
+				return 'https://music.shinarium.com/endpoints';
+			}
+			function siteUrl() {
+				return 'https://music.shinarium.com/';
+			}
+		</script>
+		<!-- <script src="https://unpkg.com/wavesurfer.js"></script> -->
+			    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+	    		<script src="https://music.shinarium.com/themes/default/js/emojionearea.min.js?v=1.4.5"></script>
+
+		<link rel="stylesheet" href="https://music.shinarium.com/themes/default/css/emojionearea.min.css?v=1.4.5">
+		 	    	    		<script>
+			window.run_station = null;
+            $(document).ready(function() {
+                window.init_emojioneArea = function() {
+                    $(".comment_input").emojioneArea({
+                        useInternalCDN: true,
+                        events: {
+                            keyup: function (editor, event) {
+                            	                            	id = $( $(this)[0].source[0]).attr('data-audio-id');
+                                $($(".comment_input")).limit("640", '#charsLeft_'+id);
+                                c_id = $( $(this)[0].source[0]).attr('data-comment-id');
+                                if ($('#write_comment_'+c_id).length) {
+                                	$($('#write_comment_'+c_id)).limit("640", '#charsLeft_r_'+c_id);
+                                }
+                                                                let emojioneArea = this; //this is instance of EmojioneArea
+                                if (event.which === 13 && !event.shiftKey) {
+                                    // $scope.onPressKeyTextarea(event);
+																	var audioid = $( $(this)[0].source[0]).attr('data-audio-id');
+																	var commentid = $( $(this)[0].source[0]).attr('data-comment-id');
+																	if(typeof commentid !== 'undefined'){
+																		registerCommentreplay(emojioneArea.getText(), audioid, commentid, event, $(this));
+																	}else{
+																		registerComment(emojioneArea.getText(), audioid, event, $(this));
+																	}
+                                    emojioneArea.setText('');
+                                    emojioneArea.hidePicker();
+                                    emojioneArea.editor.focus();
+                                    event.preventDefault();
+                                }
+                            }
+                        },
+                        search: false,
+                        recentEmojis: false,
+                        filtersPosition: "bottom",
+                        tones: false,
+                        autocomplete: false,
+                        filters: {animals_nature: false, food_drink: false, activity: false, travel_places: false, objects: false, symbols: false, flags: false}
+                    });
+                }
+				window.init_emojioneArea();
+
+				window.init_emojioneArea_replay = function(id) {
+					$('#write_comment_'+id).emojioneArea({
+						useInternalCDN: true,
+						events: {
+							keyup: function (editor, event) {
+								let _emojioneArea = this; //this is instance of EmojioneArea
+								if (event.which === 13 && !event.shiftKey) {
+									var _audioid = $( $(this)[0].source[0]).attr('data-audio-id');
+									var _commentid = $( $(this)[0].source[0]).attr('data-comment-id');
+										registerCommentreplay(_emojioneArea.getText(), _audioid, _commentid, event, $(this));
+										_emojioneArea.setText('');
+										_emojioneArea.hidePicker();
+										_emojioneArea.editor.focus();
+										event.preventDefault();
+								}
+							}
+						},
+						search: false,
+						recentEmojis: false,
+						filtersPosition: "bottom",
+						tones: false,
+						autocomplete: false,
+						filters: {animals_nature: false, food_drink: false, activity: false, travel_places: false, objects: false, symbols: false, flags: false}
+					});
+				}
+
+				window.init_blogemojioneArea = function() {
+                    $(".blog_comment_input").emojioneArea({
+                        useInternalCDN: true,
+                        events: {
+                            keyup: function (editor, event) {
+                                let emojioneArea = this; //this is instance of EmojioneArea
+                                if (event.which === 13 && !event.shiftKey) {
+                                    // $scope.onPressKeyTextarea(event);
+									var audioid = $( $(this)[0].source[0]).attr('data-article-id');
+                                    registerBlogComment(emojioneArea.getText(), audioid, event, $(this));
+                                    emojioneArea.setText('');
+                                    emojioneArea.hidePicker();
+                                    emojioneArea.editor.focus();
+                                    event.preventDefault();
+                                }
+                            }
+                        },
+                        search: false,
+                        recentEmojis: false,
+                        filtersPosition: "bottom",
+                        tones: false,
+                        autocomplete: false,
+                        filters: {animals_nature: false, food_drink: false, activity: false, travel_places: false, objects: false, symbols: false, flags: false}
+                    });
+                }
+                window.init_blogemojioneArea();
+            });
+		</script>
+
+		<script>
+		$(document).ready(function() {
+		  $.ajaxSetup({
+		    data: {
+		        hash_id: getHashID()
+		    },
+		    cache: false
+		  });
+		});
+		$(window).on("popstate", function () {
+			if (history.state.ajax_url) {
+				goToAjaxLink(history.state.ajax_url);
+			}
+		});
+		window.search_url = 'https://music.shinarium.com/search/songs/';
+        window.chatfetch = false;
+        window.UpdateChatU = 0;
+			$(document).on('click', '[data-load]', function(event) {
+				$('.xzoom-source').remove();
+				$('#buy_ticket_modal').modal('hide');
+				if ($(this).attr('data-load') == '') {window.open($(this).attr('href'), '_blank');
+					if (parseInt($('.ss_track_play_pause').attr('data_is_ad')) > 0) {
+				 		is_sent = 1;
+				 		song_id = $('#current-track').attr('value');
+				 		onTimesUp(song_id);
+				 		return false;
+				 	}
+					return false;
+				}
+				  //$('.sections li').removeClass('active');
+			      $('#bar_loading').show().animate({width:20 + 80 * Math.random() + "%"}, 200);
+			      event.preventDefault();
+			      var url = $(this).attr('data-load');
+			      $.ajax({
+			        url: siteUrl() + '/ajax-load.php?path=' + url,
+			        type: 'GET',
+			        dataType: 'html'
+			      })
+			      .done(function(data_html, textStatus, request) {
+			      	if (request.status == 201) {
+			      		$('#login_box').modal('show');
+			      	} else {
+			      	    if(window.run_station !== null){
+                            window.run_station.pause();
+						}
+                        data = JSON.parse($(data_html).filter('#json-data').val());
+
+
+
+				        window.history.pushState({state:'new', ajax_url: url},'', data.url);
+
+                        if(data.page_name == 'messages'){
+                            window.chatfetch = true;
+						}else{
+                            window.chatfetch = false;
+						}
+
+				        if(data.page_name !== 'search'){
+				            $('#search_keyword').val('');
+						}
+
+				        $('#container_content').html(data_html);
+				        $('meta[name=title]').attr('content', data.site_title);
+				        $('#page').attr('data-page', data.page_name);
+				        $('meta[name=description]').attr('content', data.description);
+				        $('meta[name=keywords]').attr('content', data.keyword);
+				        $('title').html(data.site_title);
+				        if (data.page_name) {
+				        	setTimeout(function () {
+				        		updateWaves = false;
+				        		if ($('#current-track').val()) {
+				        			if (Amplitude.getActiveSongMetadata().id == $('#current-track').val()) {
+					        			updateWaves = true;
+					        		} else {
+					        			$('body').removeClass('player_running');
+					        		}
+				        		} else {
+				        			updateWaves = true;
+				        		}
+				        		if (updateWaves == true) {
+				        			var getCurrentPlaying = Number($('.amplitude-song-played-progress').attr('value')) * 100;
+					        		$('#light-wave').width(getCurrentPlaying + '%');
+					        		updateWaveForm();
+				        		}
+				        	}, 100);
+				        	if( data.page_name == 'blogs' ){
+                                window.search_url = 'https://music.shinarium.com/blogs/tag/';
+							}
+				        }
+				        if (Amplitude.getActiveSongMetadata().id && $('#page').attr('data-page') == 'track') {
+				        	if (Amplitude.getActiveSongMetadata().id == $('#current-track').val()) {
+				        		$('body').addClass('player_running');
+				        	}
+				        }
+				        if (Amplitude.getActiveSongMetadata().u_id && $('#page').attr('data-page') != 'track') {
+				        	$('.playlist-list-song[data-id=' + Amplitude.getActiveSongMetadata().u_id + ']').addClass('playing');
+				        	$('.list-recommended[data-id=' + Amplitude.getActiveSongMetadata().u_id + ']').addClass('playlist-list-song playing');
+				        	if ($('.feed_post[data-id="' + Amplitude.getActiveSongMetadata().u_id + '"]').length > 0) {
+				        		$.get('https://music.shinarium.com/endpoints/get-song-info', {id: Amplitude.getActiveSongMetadata().id}, function(data) {
+				        			if (data.status == 200) {
+				        				$('body').attr('song-duration', data.duration);
+				        				if (data.songWaves.length > 0) {
+											$('.feed_post[data-id="' + data.songID + '"]:first').find('.waveform-small').html(data.songWaves);
+											$('#light-wave img').width($('#dark-wave').width() + 'px');
+											$('.feed_post[data-id="' + data.songID + '"]:first').find('.post-actions').removeClass('hidden');
+											$('.feed_post[data-id="' + data.songID + '"]:first').find('.ssong_comments').removeClass('hidden');
+											$('.feed_post[data-id="' + data.songID + '"]:first').find('.art-info').removeClass('hidden');
+				    						$('.feed_post[data-id="' + data.songID + '"]:first').find('.comment_list').html(data.comments);
+				    						$('.feed_post[data-id="' + data.songID + '"]:first').find('.comment-waves').html(data.waves);
+				    						var getCurrentPlaying = Number($('.amplitude-song-played-progress').attr('value')) * 100;
+					        		        $('#light-wave').width(getCurrentPlaying + '%');
+				    						updateWaveForm();
+										}
+				        			}
+				        		});
+				        	}
+				        }
+                        $('#music-user-ads-table').find('[type="checkbox"]').each(function(index, el) {
+                            $(el).bootstrapToggle();
+                        });
+
+                        if( data.page_name === 'station'){
+                            setTimeout(function () {
+                            	$('body').addClass('player_running');
+                            }, 100);
+                        }
+
+			      	}
+
+			      })
+			      .fail(function() {
+			         window.location.href = siteUrl()+'/404';
+			      })
+			      .always(function() {
+			      	if (typeof data !== 'undefined') {
+			      		if (data.page_name == 'user' && data.scroll == true) {
+				        	$('html,body').animate({
+						        scrollTop: $('#myTab').offset().top - 350
+						    });
+				        } else {
+				        	$('html,body').animate({
+						        scrollTop: $('body').offset().top
+						    });
+				        }
+                        window.init_emojioneArea();
+			      	}
+			        $('#bar_loading').animate({width:"100%"}, 200).fadeOut(300, function() {
+			           $(this).width("0");
+			        });
+			      });
+			  });
+			window.artist_sell = 'on';
+			var video_player;
+		</script>
+
+		<script src="https://music.shinarium.com/themes/default/js/header.js?1452"></script>
+
+				<link rel="stylesheet" href="https://music.shinarium.com/themes/default/css/day.style.css" id="night-mode-css">
+		
+		<link rel="stylesheet" href="https://music.shinarium.com/themes/default/css/custom.style.css?1716" id="custom.style.css">
+				<link rel="stylesheet" href="https://music.shinarium.com/themes/default/js/lib/sweetalert2/dist/sweetalert2.min.css?v=1.4.5">
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+		<style>
+
+</style>
+
+		<style>
+			.ui-menu-item img { padding-right: 10px; width: 32px; height: 32px; }
+			.ui-menu-item span { color: #444; font-size: 12px; vertical-align: top }
+		</style>
+
+					<script src="https://js.stripe.com/v3/"></script>
+						<script src="https://music.shinarium.com/themes/default/js/plyr.polyfilled.js"></script>
+		<link rel="stylesheet" href="https://music.shinarium.com/themes/default/css/plyr.css">
+						<script src="https://music.shinarium.com/themes/default/js/jquery-ui-timepicker-addon.min.js"></script>
+						<script type="text/javascript" src="https://music.shinarium.com/themes/default/js/xzoom.min.js?v=1.4.5"></script>
+		<script src="https://music.shinarium.com/themes/default/js/html2pdf.bundle.js"></script>
+		<script src="https://music.shinarium.com/themes/default/js/qrcode.js?v=1.4.5"></script>
+		<link rel="stylesheet" href="https://music.shinarium.com/themes/default/css/lightbox.min.css?v=1.4.5">
+		<script src="https://music.shinarium.com/themes/default/js/lightbox.min.js?v=1.4.5"></script>
+				
+		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	</head>
+
+	<body class="" data-lang="ltr">
+			<div class="music_app">
+			<div class="ma_container" id="page" data-page="home">
+				<!-- Start Sidebar  -->
+				
+				<!-- End Sidebar  -->
+
+				<!-- Header  -->
+				<div id="main-header">
+					
+				</div>
+				<div id="bar_loading"></div>
+				<!-- End Header  -->
+
+				<!-- Content  -->
+				<div id="container_content">
+					<style>
+    .number-count{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	margin-top: 3.8rem;
+
+}
+.number{
+	margin:auto 2rem;
+}
+.number h1{
+    cursor: pointer;
+	font-weight: 700;
+	background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip: text;
+}
+.hue-shift{
+    animation: hue-shift 2s infinite alternate;
+}
+
+/* ..index-3-solution */
+
+.solution-h1{
+	background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip: text;
+}
+
+@keyframes hue-shift{
+    from{
+        filter: hue-rotate(0);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+a{
+    text-decoration: none;
+}
+.tone-sec{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: Raleway, sans-serif;
+    width:100%;
+}
+.margin{
+    margin:2.8rem auto;
+}
+.margin-{
+    text-align: center;
+    background-color: #ECECF5;
+    border-radius: 4px 4px 4px 4px;
+}
+.margin span{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 36px;
+}
+.link{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 36px;
+    color: #0C0C15;
+}
+
+.blue{
+    color: #5D5FEF;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+}
+.gray{
+    color: #cac8d9;
+}
+.small-blue{
+    font-size: 20px ;
+    color: #3d40ca;
+}
+.text-bold{
+    font-family: Raleway, sans-serif;
+    font-size: 24px;
+    color: #1b1b2d;
+    font-weight: bold;
+    line-height: 36px;
+}
+.bold-{
+    font-size: 24px;
+    font-weight: 600;
+}
+.bold{
+    font-size: 48px;
+    font-weight: 600;
+}
+.white{
+    font-family: "Raleway", Sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0C0C15;
+    background-image: linear-gradient(180deg, #2323CC00 0%, #F2295B00 100%);
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #D9D9E5;
+    border-radius: 4px 4px 4px 4px;
+    padding: 1.5rem 6rem;
+    text-decoration: none;
+}
+.blacko{
+    background: #0C0C15;
+    color: white;
+}
+.second{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem auto;
+}
+@media only screen and (max-width:765px ) {
+
+    .tone-sec{
+        grid-template-columns: none;
+    }
+    
+    .second{
+        grid-template-columns: none;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        position: relative;
+        top: 1.5rem;
+        /* left: 8.2rem; */
+    }
+    .margin-{
+       padding: 27px 40px;
+        margin: 1rem auto;
+        width:100%;
+    }
+}
+@media only screen and (min-width:765px ) {
+    .margin-{
+         padding: 27px 40px;
+         /*position: relative;*/
+         /*right: 2rem;*/
+         /*top: 2rem;*/
+         width: 400px;
+         margin: 1rem 0;
+    }
+}
+</style>
+
+
+<div class="ma_home_nav">
+	<nav class="navbar">
+		<div class="container">
+			<a class="navbar-brand" href="">
+				<img src="https://music.shinarium.com/themes/default/img/home-logo.png" alt="">
+			</a>
+			<div class="navbar-right">
+				<a href="#" data-toggle="modal" data-target="#login_box" class="btn btn-outline-light">Login</a>
+								<a href="#" data-toggle="modal" data-target="#signup_box" class="btn btn-light">Register</a>
+							</div>
+		</div>
+	</nav>
+</div>
+<div class="ma_home_head">
+	<div class="container">
+		<h1 class="heading">Explore Shinarium Multiverse</h1>
+		<p class="sub_heading">Shinarium Musicverse a gasless decentralised GameFi, Musicverse and Videoverse for content creators and artist on the blockchain.</p>
+		<div class="link_holder">
+						<button data-toggle="modal" data-target="#signup_box" class="btn btn-light">
+				Signup Now
+				<svg viewBox="0 0 19 14" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+					<path fill="currentColor" d="M18.6 6.9v-.5l-6-6c-.3-.3-.9-.3-1.2 0-.3.3-.3.9 0 1.2l5 5H1c-.5 0-.9.4-.9.9s.4.8.9.8h14.4l-4 4.1c-.3.3-.3.9 0 1.2.2.2.4.2.6.2.2 0 .4-.1.6-.2l5.2-5.2h.2c.5 0 .8-.4.8-.8 0-.3 0-.5-.2-.7z"></path>
+				</svg>
+			</button>
+						<a class="link" href="https://music.shinarium.com/discover">Explore</a>
+		</div>
+		<div class="ma_home_search">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<form onsubmit="event.preventDefault();window.location = 'https://music.shinarium.com/search/songs/' + $('#search_keyword').val();">
+							<input class="form-control" placeholder="Search for artists, tracks" type="search" autocomplete="off" name="search_keyword" id="search_keyword">
+							<button class="btn" type="submit">search</button>
+						</form>
+					</div>
+					<div class="col-md-3"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<ul class="bg_bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+
+<div class="jumbotron ma_home_features">
+	<div class="container">
+		<div class="feature_list">
+			<img src="https://music.shinarium.com/themes/default/img/Shinariummusic.png">
+			<div class="feature_info">
+				<h2>Build socialFi DApps on Multiverse</h2>
+				<p>Shinarium Multiverse can easily convert your heavy application SocialFi, Musicverse, GameFi to lightweight. Helping you build faster.</p>
+			</div>
+		</div>
+		<div class="feature_list">
+			<div class="feature_info">
+				<h2>Earn rewards</h2>
+				<p>Everyone on Musicverse can win unlimited rewards, every hour a fan gets rewarded. But creators and fans can earn for doing what they love, stake your tokens to earn more</p>
+			</div>
+			<img src="https://music.shinarium.com/themes/default/img/Group 1928.png">
+	</div>
+</div>
+
+<div class="number-count hue-shift">
+                <div class="number">
+                    <h1>100k+</h1>
+                    <p>Transactions</p>
+                </div>
+                <div class="number">
+                    <h1>20k+</h1>
+                    <p>Community</p>
+                </div>
+            </div>
+            
+            <div class="jumbotron ma_home_features">
+	<div class="container">
+		<div class="feature_list">
+			<img src="https://music.shinarium.com/themes/default/img/60062c7f7390713a17d8d421_perk_card_collage.png">
+			<div class="feature_info">
+				<h2>Get closer to your creators</h2>
+				<p>Users can buy creators token to interact and engage with their favourite creators without limits through video calls, instant message, shout out, merch, meet and greet.</p>
+			</div>
+		</div>
+		<div class="feature_list">
+			<div class="feature_info">
+				<h2>Host Virtual concert</h2>
+				<p>Get your concert, karaoke, parties into the metaverse, up to 10,000+ guest, the future of socialFi. Earn $mSHINA when you engage and interact with your favourite content creators</p>
+			</div>
+			<img src="https://music.shinarium.com/themes/default/img/Hero_Screens_Mobile_AR (1).png">
+		</div>
+	</div>
+</div>
+
+ <div class="container">
+        <span class="text-bold"> How does $MSHINA differ from $TRACK?</span>
+
+        <div class="tone-sec">
+           
+            <div class="sec-tone">
+                <h2 class="blue"> $MSHINA TOKEN</h2>
+
+                <div class="margin">
+                    <span class="gray">Max Supply:</span>
+                    <br>
+                <span class="small-blue">10,000,000,000</span>
+                </div>
+
+                <div class="margin">
+                    <span class="gray">Circulating Supply:</span>
+                    <br>
+                <span class="small-blue">2,500,000,000</span>
+                </div>
+
+                <div class="margin">
+                    <span class="gray">Contract Address:</span>
+                    <br>
+                <span class="small-blue">1,000,000,000</span>
+                </div>
+
+            </div>
+
+            <div class="sec-tone">
+                <h2 class="blue"> $TRACK TOKEN</h2>
+
+                <div class="margin">
+                    <span class="gray">Max Supply:</span>
+                    <br>
+                <span>5,000,000,000</span>
+                </div>
+
+                <div class="margin">
+                    <span class="gray">Circulating Supply:</span>
+                    <br>
+                <span>NA</span>
+                </div>
+
+                <div class="margin">
+                    <span class="gray">Contract Address:</span>
+                    <br>
+                <a href="" class="link">TBA</a>
+                </div>
+
+            </div>
+
+            <div class="sec-tone">
+                <div class="margin-">
+                    <p class="black"> <span class="bold-">$MSHINA</span> Transaction Fee</p>
+                    <span class="bold"> 8%</span>
+                </div>
+
+                <div class="margin-">
+                    <p class="black"> <span class="bold-">$TRACK</span> Transaction Fee</p>
+                    <span class="bold"> 5%</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="second">
+            <a href="" class="white">Buy Mshina</a>
+            <a href="" class="white blacko">Live Chart</a>
+        </div>
+    </div>
+
+<!--<div class="jumbotron ma_home_jumbo_w">-->
+<!--	<div class="container ma_home_artist">-->
+<!--		<h2 class="light main text-center">Top Trending Artists</h2>-->
+<!--		<div class="artist_section">-->
+<!--			<div class="artist_list">
+    <div class="cover_art">
+
+        <a href="https://music.shinarium.com//Shinamusic" >
+            <img src="https://music.shinarium.com/upload/photos/d-avatar.jpg">
+        </a>
+    </div>
+    <div class="track_info">
+        <a href="https://music.shinarium.com//Shinamusic" ><span class="artist">Shinamusic</span></a>
+    </div>
+</div><div class="artist_list">
+    <div class="cover_art">
+
+        <a href="https://music.shinarium.com//Shinamusic" >
+            <img src="https://music.shinarium.com/upload/photos/d-avatar.jpg">
+        </a>
+    </div>
+    <div class="track_info">
+        <a href="https://music.shinarium.com//Shinamusic" ><span class="artist">Shinamusic</span></a>
+    </div>
+</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</div>-->
+<div class="jumbotron ma_home_creator">
+	<div class="container">
+		<div class="creator_content">
+			<h2>Earn rewards</h2>
+			<p>Content creators on can earn rewards for doing what they love, all fees are paid in $SHINA token</p>
+			<ul class="icon_features list-unstyled">
+				<li>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-reactid="1231">
+						<polyline points="16 16 12 12 8 16"></polyline>
+						<line x1="12" y1="12" x2="12" y2="21"></line>
+						<path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path>
+						<polyline points="16 16 12 12 8 16"></polyline>
+					</svg>
+					<h5>Upload Songs</h5>
+				</li>
+				<li>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+						<path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+						<path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+					</svg>
+					<h5>Check Stats</h5>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="jumbotron ma_home_jumbo_w">
+	<div class="container text-center final_step_info">
+		<h1 class="light">Daily NFT Airdrop.</h1>
+		<div class="final_step">
+						<a href="#" data-toggle="modal" data-target="#signup_box" class="btn btn-primary btn-mat">Register</a>
+						<span>OR</span>
+			<a href="#" data-toggle="modal" data-target="#login_box" class="btn btn-outline-primary">Login</a>
+		</div>
+	</div>
+</div>
+<footer class="full_footer">
+	<p class="copyright">
+	Copyright © 2022 Shinarium Musicverse.	</p>
+	<ul class="list-unstyled mb-0 imp_links">
+		<li><a href="https://music.shinarium.com/blogs">Blogs</a></li>
+
+		<li><a href="https://music.shinarium.com/terms/about">About Us</a></li>
+		<li><a href="https://music.shinarium.com/terms/terms">Terms</a></li>
+		<li><a href="https://music.shinarium.com/contact">Contact</a></li>
+		<li><a href="https://music.shinarium.com/terms/privacy">Privacy Policy</a></li>
+		<li><a href="https://music.shinarium.com/terms/faqs">faqs</a></li>
+	</ul>
+	<div class="lang_select dropup">
+		<button type="button" class="btn dropdown-toggle" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</button>
+		<div class="dropdown-menu dropdown-menu-right mat-dropdown">
+			<ul class="list-unstyled mb-0">
+									<li><a href="?lang=english">English</a></li>
+									<li><a href="?lang=arabic">Arabic</a></li>
+									<li><a href="?lang=dutch">Dutch</a></li>
+									<li><a href="?lang=french">French</a></li>
+									<li><a href="?lang=german">German</a></li>
+									<li><a href="?lang=russian">Russian</a></li>
+									<li><a href="?lang=spanish">Spanish</a></li>
+									<li><a href="?lang=turkish">Turkish</a></li>
+							</ul>
+		</div>
+	</div>
